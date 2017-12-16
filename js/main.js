@@ -2,11 +2,9 @@ var x = 0;
 var array=[{title:'',note:''}];
 function display_array(){
 	if(x==0){
-	    array[x].title=document.getElementById("formGroupExampleInput").value;
-	    array[x].note=document.getElementById("formGroupExampleInput2").value;
 	    console.log(array[x]);
-
-	    var str=dofucntion();
+	    var str=dofunction();
+	    $(".container-fluid").append(str);
 
 	}
 	else {
@@ -18,6 +16,7 @@ function display_array(){
 
 				else {
         			var str1=dofunction();
+        			$(".container-fluid").append(str1);
 				}
 			}
 	}
