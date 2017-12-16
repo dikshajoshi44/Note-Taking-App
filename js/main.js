@@ -16,11 +16,11 @@ function display_array(){
   noteObj['note'] = note;
   console.log(noteObj);
   notes.push(noteObj);
-  var htmlString = '<div class="row">' + '<div class="col-4">' +
+  var htmlString = '<div class="col-4">' +
   '<div class="card" style="width: 20rem;">' +'<div class="card-body">' + 
   '<h4 class="card-title">' + title + '</h4>' + '<p class="card-text">' + note + '</p>' +
-  '</div>' +'</div>' +'</div>' + '</div> ' ;
-  $(".container-fluid").append(htmlString);
+  '</div>' +'</div>' +'</div>'  ;
+  $(".row").append(htmlString);
   console.log(notes);
 }
 
