@@ -2,7 +2,6 @@ var array=[];
 var x={};
 function display_array(){
 	if(x=={}){
-	    console.log(array[x]);
 	    var str=dofunction();
 	    $(".container-fluid").append(str);
 
