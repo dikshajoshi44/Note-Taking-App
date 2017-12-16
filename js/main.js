@@ -1,10 +1,11 @@
 var array=[];
 
 function display_array(){
-	var x={};
 	if(array.length==0){
 		console.log();
 	    var str=dofunction();
+	    console.log(str);
+	    console.log();
 	    $(".container-fluid").append(str);
 
 	}
@@ -17,6 +18,8 @@ function display_array(){
 
 				else {
         			var str1=dofunction();
+        			console.log(str1);
+        			conole.log();
         			$(".container-fluid").append(str1);
 				}
 			}
