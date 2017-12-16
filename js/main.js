@@ -1,7 +1,9 @@
 var array=[];
-var x={};
+
 function display_array(){
-	if(x=={}){
+	var x={};
+	if(array.length==0){
+		console.log();
 	    var str=dofunction();
 	    $(".container-fluid").append(str);
 
@@ -9,7 +11,7 @@ function display_array(){
 	else {
 		var a=document.getElementById("formGroupExampleInput").value;
 			for(i=0;i<array.length;i++){
-				if(x['title']==a){
+				if(array[i]['title']==a){
 					window.alert("INVALID");
 				}
 
@@ -22,6 +24,7 @@ function display_array(){
   
 }
 function dofunction(){
+					var x={};
 					x['title']=document.getElementById("formGroupExampleInput").value;
 	    			x['note']=document.getElementById("formGroupExampleInput2").value;
 					var b ='<div class="row">' + 
