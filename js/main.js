@@ -1,5 +1,5 @@
-var x = 0;
-var array=[{title:'',note:''}];
+var array=[];
+var x={};
 function display_array(){
 	if(x==0){
 	    console.log(array[x]);
@@ -10,7 +10,7 @@ function display_array(){
 	else {
 		var a=document.getElementById("formGroupExampleInput").value;
 			for(i=0;i<array.length;i++){
-				if(array[i].title==a){
+				if(x['title']==a){
 					window.alert("INVALID");
 				}
 
@@ -23,15 +23,15 @@ function display_array(){
     x++;   
 }
 function dofunction(){
-					array[x].title=document.getElementById("formGroupExampleInput").value;
-	    			array[x].note=document.getElementById("formGroupExampleInput2").value;
+					x['title']=document.getElementById("formGroupExampleInput").value;
+	    			x['note']=document.getElementById("formGroupExampleInput2").value;
 					var b ='<div class="row">' + 
           					'<div class="col-4">' +
                     			'<div class="card" style="width: 20rem;">' +
                     			'<div class="card-body">' +
-                    				'<h4 class="card-title">' + array[x].title + 
+                    				'<h4 class="card-title">' + array.push(x['title']) + 
                     				'</h4>' +
-                    				'<p class="card-text">' + array[x].note + '</p>' +
+                    				'<p class="card-text">' + array.push(x['note']) + '</p>' +
                 				'</div>' +
             					'</div>' +
             				'</div>' + 
