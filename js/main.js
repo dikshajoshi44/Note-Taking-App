@@ -1,7 +1,38 @@
-var array=[];
-
+var notes=[];
 function display_array(){
-	if(array.length==0){
+	console.log(notes);
+	var noteObj = {};
+	var title=document.getElementById("formGroupExampleInput").value;
+	var note=document.getElementById("formGroupExampleInput2").value;
+
+	for (var i=0; i < notes.length; i++) {
+    	if (notes[i]['title'] == title) {
+      			alert('Already added');
+      			return;
+    }
+  }
+
+  noteObj['title'] = title;
+  noteObj['note'] = note;
+  console.log(noteObj);
+  notes.push(noteObj);
+  var htmlString = '<span class="row">' + 
+          					'<div class="col-4">' +
+                    			'<div class="card" style="width: 20rem;">' +
+                    			'<div class="card-body">' +
+                    				'<h4 class="card-title">' + title + 
+                    				'</h4>' +
+                    				'<p class="card-text">' + note + '</p>' +
+                				'</div>' +
+            					'</div>' +
+            				'</div>' + 
+        					'</span> ' ;
+  $(".container-fluid").append(htmlString);
+  console.log(notes);
+}
+
+
+/*	if(array.length==0){
 		console.log();
 	    var str=dofunction();
 	    console.log(str);
@@ -43,4 +74,4 @@ function dofunction(){
         					'</div> ' 
         			return b
 
-}
+}*/
