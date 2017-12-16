@@ -17,8 +17,9 @@ function display_array(){
   console.log(noteObj);
   notes.push(noteObj);
   var htmlString = '<div class="col-4">' +
-  '<div class="card" style="width: 20rem;">' +'<div class="card-body">' + 
-  '<h4 class="card-title">' + title + '</h4>' + '<p class="card-text">' + note + '</p>' +
+  '<div class="card" style="width: 20rem;">' + '<i class="fa fa-pencil-square-o" aria-hidden="true">'
+   + '</i>' +'<div class="card-body">' + 
+  '<h4 class="card-title">' + title + '</h4>' + '<p class="card-text">' + note + '</p>' + 
   '</div>' +'</div>' +'</div>'  ;
   $(".row").append(htmlString);
   console.log(notes);
