@@ -11,7 +11,7 @@ input:focus{
 
 .form-control{
 
-			margin-left: 40%;
+			margin-left: 36%;
 			display:none;
 			width: 25%;
 			display: block;
@@ -28,7 +28,7 @@ input:focus{
 		}
 
 .col-form-label{
-			margin-left: 40%;
+			margin-left: 32%;
 }
 
 input#formGroupExampleInput2.form-control{
@@ -38,4 +38,20 @@ input#formGroupExampleInput2.form-control{
 label#formGroupExampleInput.col-form-label{
 			position: relative;
 			margin-top:10%;
+}
+h2{
+			margin-left: 32%;
+}
+
+h4{
+			margin-left: 32%;
+    		margin-top: 2%
+}
+
+form{
+			margin-top:4%;
+}
+
+button.btn.btn-primary{
+			margin-left: 45%;
 }
