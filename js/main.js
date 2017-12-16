@@ -1,7 +1,7 @@
 var array=[];
 var x={};
 function display_array(){
-	if(x==0){
+	if(x=={}){
 	    console.log(array[x]);
 	    var str=dofunction();
 	    $(".container-fluid").append(str);
@@ -20,7 +20,7 @@ function display_array(){
 				}
 			}
 	}
-    x++;   
+  
 }
 function dofunction(){
 					x['title']=document.getElementById("formGroupExampleInput").value;
