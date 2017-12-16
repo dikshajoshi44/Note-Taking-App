@@ -1,13 +1,12 @@
-
 input{
 				border:1px solid black;
-	}
+}
 
 input:focus{
 
 				background-color: #E6E6E6;
 
-		}
+}
 
 .form-control{
 
@@ -15,17 +14,17 @@ input:focus{
 				display:none;
 				width: 25%;
 				display: block;
-			    height: 34px;
-			    padding: 6px 12px;
-			    font-size: 14px;
-			    line-height: 1.42857143;
-			    color: #555;
-			    background-color: #fff;
-			    background-image: none;
-			    border: 1px solid #ccc;
-			    border-radius: 4px;
-      
-		}
+				height: 34px;
+				padding: 6px 12px;
+				font-size: 14px;
+				line-height: 1.42857143;
+				color: #555;
+				background-color: #fff;
+				background-image: none;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+
+}
 
 .col-form-label{
 				margin-left: 32%;
