@@ -30,6 +30,7 @@ input{
 				border-radius: 4px;
 				color:#000000;
 				font-weight: bold;
+				word-break: keep-all;
 
 }
 
@@ -42,6 +43,7 @@ input#formGroupExampleInput2.form-control{
 				color:#000000;
 				font-weight: bold;
 				background-color: #ffffff;
+				word-break: keep-all;
 }
 
 label#formGroupExampleInput.col-form-label{
