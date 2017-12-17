@@ -1,4 +1,5 @@
 var notes=[];
+var x=0;
 function display_array(){
 	console.log(notes);
 	var noteObj = {};
@@ -16,17 +17,27 @@ function display_array(){
   noteObj['note'] = note;
   console.log(noteObj);
   notes.push(noteObj);
+  
   var htmlString = '<div class="col-4">' +
-  '<div class="card" style="width: 20rem;">' + '<i class="fa fa-pencil-square-o" aria-hidden="true">'
+  '<div class="card" style="width: 20rem;">' + 
+  '<i class="fa fa-pencil-square-o" aria-hidden="true" onclick="prefill_function('+ x + ');">'
    + '</i>'+
    '<div class="card-body">' + 
   '<h4 class="card-title">' + title + '</h4>' + '<p class="card-text">' + note + '</p>' + 
   '</div>' +'</div>' +'</div>'  ;
   $(".row").append(htmlString);
   console.log(notes);
+  x++;
 }
 
+function prefill_function(b){
+    console.log(notes[b]['title']);
+    document.getElementById('formGroupExampleInput').value = notes[b]['title'];
+    document.getElementById('formGroupExampleInput2').value = notes[b]['note'];
+    
 
+
+}
 /*	if(array.length==0){
 		console.log();
 	    var str=dofunction();
