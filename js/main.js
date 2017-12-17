@@ -21,6 +21,8 @@ function addNote(){
 function updateNote(index) {
   notes[index]['title'] = document.getElementById('formGroupExampleInput').value;
   notes[index]['note'] = document.getElementById('formGroupExampleInput2').value;
+  document.getElementById('update-note').outerHTML = '';
+  document.getElementById('addbutton').style.display = 'inline-block';
   displayNotes();
 }
 
