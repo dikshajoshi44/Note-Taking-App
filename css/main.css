@@ -64,3 +64,12 @@ div.row{
 i.fa.fa-pencil-square-o{
 	margin-left:96%;
 }
+
+.card-text{
+	margin-bottom:45px;
+}
+
+.card-title{
+	margin-bottom: 1.75rem;
+    margin-top: -8%;
+}
