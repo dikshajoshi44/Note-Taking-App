@@ -43,8 +43,9 @@ function prefill_function(b){
 
 }
 
-function update(b){
+function update_function(b){
   console.log();
+
 }
 /*	if(array.length==0){
 		console.log();
