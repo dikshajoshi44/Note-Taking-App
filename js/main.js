@@ -32,11 +32,19 @@ function display_array(){
 
 function prefill_function(b){
     console.log(notes[b]['title']);
+    
     document.getElementById('formGroupExampleInput').value = notes[b]['title'];
     document.getElementById('formGroupExampleInput2').value = notes[b]['note'];
-    
+    document.getElementById('addbutton').style.display='none';
+    var htmlbutton='<button type="button" class="btn btn-primary" onclick="update_function('+ b +');">' +
+         Update + '</i>' +
+        '</button>';
+    $(".row").append(htmlbutton);
 
+}
 
+function update(b){
+  console.log();
 }
 /*	if(array.length==0){
 		console.log();
