@@ -46,9 +46,6 @@ function displayNotes() {
       $(".row").append(htmlString);
       console.log(notes);
   }
-  document.getElementById('formGroupExampleInput').value="";
-  document.getElementById('formGroupExampleInput2').value="";
-
 }
 
 /*

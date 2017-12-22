@@ -1,27 +1,28 @@
-body{
-				color:#000000;
-				background-color:#37474f;
-}
-
 input{
 				border:1px solid black;
+}
+
+input:focus{
+
+				background-color: #E6E6E6;
+
 }
 
 .form-control{
 
 				margin-left: 36%;
+				display:none;
 				width: 25%;
 				display: block;
 				height: 34px;
 				padding: 6px 12px;
 				font-size: 14px;
+				line-height: 1.42857143;
 				color: #555;
-				background-color: #ffffff;
+				background-color: #fff;
 				background-image: none;
-				border:1px solid #ccf;
+				border: 1px solid #ccc;
 				border-radius: 4px;
-				color:#000000;
-				font-weight: bold;
 
 }
 
@@ -31,13 +32,10 @@ input{
 
 input#formGroupExampleInput2.form-control{
 				height:150px;
-				color:#000000;
-				font-weight: bold;
-				background-color: #ffffff;
-				
 }
 
 label#formGroupExampleInput.col-form-label{
+				position: relative;
 				margin-top:10%;
 }
 
@@ -56,8 +54,6 @@ form{
 
 button.btn.btn-primary{
 				margin-left: 45%;
-				background-color: #607d8b;
-				font-weight: bold;
 }
 
 div.row{
@@ -66,30 +62,18 @@ div.row{
 }
 
 i.fa.fa-pencil-square-o{
-				margin-left:96%;
+	margin-left:96%;
 }
 
 .card-text{
-				margin-bottom:45px;
-				color:#000000;
+	margin-bottom:45px;
 }
 
 .card-title{
-				margin-bottom: 1.75rem;
-    			margin-top: -8%;
-    			color:#000000;
+	margin-bottom: 1.75rem;
+    margin-top: -8%;
 }
 
 #update-note{
-				margin-left:45%;
-}
-
-.card-body{
-				margin-top: 4%;
-    			margin-bottom: 2%;
-}
-
-.card{
-				background-color: #fff59d;
-				margin-top: 10%;
+	margin-left:45%;
 }
