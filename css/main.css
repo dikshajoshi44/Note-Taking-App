@@ -3,12 +3,6 @@ body{
 	background-color:#37474f;
 }
 
-
-input:focus{
-
-				background-color: #E6E6E6;
-
-}
 input{
 				border:1px solid black;
 }
@@ -98,6 +92,7 @@ i.fa.fa-pencil-square-o{
 	margin-top: 4%;
     margin-bottom: 2%;
 }
+
 .card{
 	background-color: #fff59d;
 	margin-top: 10%;
